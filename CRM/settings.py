@@ -119,7 +119,7 @@ STATIC_URL = 'static/'
 
 #ADDED  manually  ______________________________________________________
 STATICFILES_DIRS = [
-    BASE_DIR / "assest",
+    BASE_DIR / "static"
     
 
     
