@@ -5,7 +5,8 @@ from timesheet import views
 urlpatterns = [
 
      path("",views.index,name='timesheet'),
-     path("rootlogin",views.rootlogin,name='rootlogin')
+     path("rootlogin",views.rootlogin,name='timesheet'),
+     path("index",views.index,name='timesheet')
     
    
 ]
