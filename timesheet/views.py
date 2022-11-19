@@ -5,7 +5,6 @@ def index(request):
     return render(request,'index.html')
 def rootlogin(request):
     return render(request,"rootlogin.html")
-
 def LeaveApply(request):
     return render(request,"LeaveApply.html")
 def Timesheet(request):
