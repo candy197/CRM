@@ -15,3 +15,5 @@ def TimesheetReport(request):
     return render(request,"TimesheetReport.html")
 def OverallReport(request):
     return render(request,"OverallReport.html")
+def register(request):
+    return render(request,"register.html")

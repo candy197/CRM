@@ -12,6 +12,7 @@ urlpatterns = [
      path("LeaveReport",views.LeaveReport,name='timesheet'),
      path("TimesheetReport",views.TimesheetReport,name='timesheet'),
      path("OverallReport",views.OverallReport,name='timesheet'),
+     path("register",views.register,name='timesheet'),
     
    
 ]
