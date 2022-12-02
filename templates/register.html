@@ -172,6 +172,7 @@
 <div class="login-box">
   <h2>CDT New User Register</h2>
   <form>
+    {% csrf_token %}
     <div class="user-box">
         <input type="text" name="user" required="">
         <label>Full name</label>

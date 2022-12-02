@@ -170,14 +170,15 @@
     
 </style>
 <div class="login-box">
+   {% csrf_token %}
   <h2>CDT Super User Login</h2>
   <form>
     <div class="user-box">
-      <input type="text" name="user" required="">
+      <input type="text" name="user" required>
       <label>Username</label>
     </div>
     <div class="user-box">
-      <input type="password" name="pass" required="">
+      <input type="password" name="pass" required>
       <label>Password</label>
     </div>
     <a href="#">
