@@ -38,18 +38,18 @@
       width: 100%;
       padding: 10px 0;
       font-size: 16px;
+      color: #fff;
       border-radius: 15px;
-   	  color: #fff;
       margin-bottom: 30px;
-      border: 20px;
+      border: none;
       border-bottom: 1px solid #fff;
-      outline: 20px;
+      outline: none;
       background: transparent;
     }
     .login-box .user-box label {
       position: absolute;
       top:0;
-      left: 10px;
+      left: 0;
       padding: 10px 0;
       font-size: 16px;
       color: #fff;
@@ -62,7 +62,7 @@
       top: -30px;
       left: 0;
       color: #03e9f4;
-      font-size: 15px;
+      font-size: 12px;
     }
     
     .login-box form a {
@@ -171,41 +171,41 @@
     
 </style>
 <div class="login-box">
-  
-  <h2>CDT Normal User Login</h2>
-  <form id="Timesheet" action="index" method="post">
+  <h2>CDT New User Register</h2>
+  <form action="register" method="post" id="index">
     {% csrf_token %}
     <div class="user-box">
-      <input type="text" name="user" required>
+        <input type="text" name="fname" required="">
+        <label>Full name</label>
+      </div>
+    <div class="user-box">
+      <input type="text" name="user" required="">
       <label>Username</label>
     </div>
     <div class="user-box">
-      <input type="password" name="pass" required>
+      <input type="text" name="email" required="">
+      <label>Email</label>
+    </div>    
+    <div class="user-box">
+      <input type="password" name="pass" required="">
       <label>Password</label>
     </div>
-    <a href="javascript:;" onclick="document.getElementById('Timesheet').submit()">
+     
+    <a href="javascript:;" onclick="document.getElementById('index').submit()">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-      Login
-    </button>
+      Submit
+    </a>
+    <a href="index">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      back to User Login
+    </a>
     <br>
-  
-    <a href="rootlogin">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Admin Login
-    </a>
-    <a href="register">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-     Register New user
-    </a>
   </form>
 </div>
 
