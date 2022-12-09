@@ -38,17 +38,18 @@
       width: 100%;
       padding: 10px 0;
       font-size: 16px;
-      color: #fff;
+      border-radius: 15px;
+   	  color: #fff;
       margin-bottom: 30px;
-      border: none;
+      border: 20px;
       border-bottom: 1px solid #fff;
-      outline: none;
+      outline: 20px;
       background: transparent;
     }
     .login-box .user-box label {
       position: absolute;
       top:0;
-      left: 0;
+      left: 10px;
       padding: 10px 0;
       font-size: 16px;
       color: #fff;
@@ -58,10 +59,10 @@
     
     .login-box .user-box input:focus ~ label,
     .login-box .user-box input:valid ~ label {
-      top: -20px;
+      top: -30px;
       left: 0;
       color: #03e9f4;
-      font-size: 12px;
+      font-size: 15px;
     }
     
     .login-box form a {
@@ -170,15 +171,16 @@
     
 </style>
 <div class="login-box">
+  
   <h2>CDT Normal User Login</h2>
   <form id="Timesheet" action="index" method="post">
     {% csrf_token %}
     <div class="user-box">
-      <input type="text" name="user" required="">
+      <input type="text" name="user" required>
       <label>Username</label>
     </div>
     <div class="user-box">
-      <input type="password" name="pass" required="">
+      <input type="password" name="pass" required>
       <label>Password</label>
     </div>
     <a href="javascript:;" onclick="document.getElementById('Timesheet').submit()">

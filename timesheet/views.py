@@ -10,6 +10,7 @@ def index(request):
         user = authenticate(username=username,password=password)
         if user is not None:
             login(request,user)
+            fullname = user.username
             return render(request,"Timesheet.html")
         else:
             messages.error(request,"Bad Creds!! ")
